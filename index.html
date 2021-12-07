@@ -1,0 +1,91 @@
+<! DOCTYPE html >
+< html  lang = " en " >
+
+< cabeza >
+  < meta  charset = " UTF-8 " />
+  < meta  name = " viewport " content = " width = device-width, initial-scale = 1.0 " />
+  < meta  http-equiv = " X-UA-Compatible " content = " ie = edge " />
+  < título > Sonrisas Sanas </ título >
+  < link  rel = " stylesheet " href = " https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css "
+    integridad = " sha384-ggOyR0iXCbMQv3Xipma34MD + dH / 1fQ784 / j6cY / iJTQUOhcWr7x9JvoRxT2MZw1T " crossorigin = " anónimo " />
+
+  < link  rel = " stylesheet " href = " https://use.fontawesome.com/releases/v5.8.1/css/all.css "
+    integridad = " sha384-50oBUHEmvpQ + 1lW4y57PTFmhCaXp0ML5d60M1M7uH2 + nqUivzIebhndOJK28anvf " crossorigin = " anónimo " />
+  < link  rel = " stylesheet " href = " ./style.css " />
+</ cabeza >
+
+< cuerpo >
+  < principal >
+    < div  class = " contenedor text-center " >
+      < h1 > Sonrisas Sanas
+      </ h1 >
+      < Br >
+      < div  class = " d-flex justify-content-center " >
+        < form  class = " w-50 " >
+          < p > Número de registro </ p >
+          < input  type = " text " id = " userid " class = " form-control " autocomplete = " off " readonly  placeholder = " ID " />
+          < p > Ingresa tu nombre: </ p >
+          < input  type = " text " id = " proname " class = " form-control " autocomplete = " off " placeholder = " Nombre Completo " />
+          < div  class = " fila " >
+            < div  class = " col " >
+              < p > Ingresa tu número de celular </ p >
+              < input  type = " text " id = " phone " class = " form-control m-0 " autocomplete = " off " placeholder = " Teléfono " />
+            </ div >
+            < div  class = " col " >
+              < p > Ingresa la fecha de reserva </ p >
+              < input  type = " datetime-local " id = " dayhour " class = " form-control m-0 " autocomplete = " off " placeholder = " dayhour " >
+            </ div >
+          </ div >
+        </ formulario >
+      </ div >
+      < div  class = " d-flex justify-content-center " >
+        < button  class = " btn btnCreate " id = " btn-create " > Crear </ button >
+        < button  class = " btn btnRead " id = " btn-read " > Leer </ button >
+        < button  class = " btn btnUpdate " id = " btn-update " > Actualizar </ button >
+        < button  class = " btn btnDeleteAll " id = " btn-delete " > Eliminar todo </ button >
+      </ div >
+
+      <! - Tabla ->
+      < div  class = " d-flex table-data " >
+        < table  class = " table table-striped " >
+          < thead >
+            < tr >
+              < th  scope = " col " > ID </ th >
+              < th  scope = " col " > Nombre </ th >
+              < th  scope = " col " > teléfono </ th >
+              < th  scope = " col " > Fecha </ th >
+              < th  scope = " col " > Editar </ th >
+              < th  scope = " col " > Eliminar </ th >
+            </ tr >
+          </ thead >
+          < tbody  id = " tbody " >
+          </ tbody >
+        </ tabla >
+      </ div >
+      < div  id = " notfound " > </ div >
+    </ div >
+  </ main >
+
+  <! - Etiquetas ->
+  < div  class = " w-100 btn btn-success insertmsg " > ¡ Datos insertados correctamente ...! </ div >
+  < div  class = " w-100 btn btn-warning updatemsg " > Datos actualizados ...! Actualizar la base de datos para ver el resultado </ div >
+  < div  class = " w-100 btn btn-danger deletemsg " > ¡ Datos eliminados ...! </ div >
+
+  < script  src = " https://code.jquery.com/jquery-3.3.1.slim.min.js "
+    integridad = " sha384-q8i / X + 965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH + 8abtTE1Pi6jizo " crossorigin = " anónimo " >
+  </ script >
+  < script  src = " https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js "
+    integridad = " sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin = " anónimo " >
+  </ script >
+  < script  src = " https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js "
+    integridad = " sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf / nJGzIxFDsf4x0xIM + B07jRM " crossorigin = " anónimo " >
+  </ script >
+
+  <! - Incluir a Dexie ->
+  < script  src = " https://unpkg.com/dexie@latest/dist/dexie.js " > </ script >
+
+  <! - Archivo principal personalizado ->
+  < script  src = " ../js/main.js " type = " module " > </ script >
+</ cuerpo >
+
+</ html >
