@@ -1,0 +1,19 @@
+{
+  "name": "indexdb1",
+  "version": "1.0.0",
+  "description": "In this project we gonna learn how to create, read, update and delete data from indexdb database using Dexie library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ana14624/reservacionesdentales.git"
+  },
+  "author": "Anayeli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ana14624/reservacionesdentales/issues"
+  },
+  "homepage": "https://github.com/ana14624/reservacionesdentales#readme"
+}
